@@ -48,8 +48,8 @@ const About = () => {
                   <tr>
                     <th>Email</th>
                     <th>
-                      <a href="mailto:xevierturrubiartes@gmail.com">
-                        xevierturrubiartes@gmail.com
+                      <a href="mailto:xevier.dev@gmail.com">
+                        xeviert.dev@gmail.com
                       </a>
                     </th>
                   </tr>
@@ -138,11 +138,12 @@ const About = () => {
                           <h5>Rodeo Logistics</h5>
                           <span>( 12/2021 — Today )</span>
                         </div>
-                        <h3>Junior Software Engineer/ Quality Assurance Engineer</h3>
+                        <h3>Junior Software Engineer/Quality Assurance Engineer</h3>
                         <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
+                        ● Participate in code reviews with senior engineers to gain feedback and insight for improvements. <br/>
+                        ● In charge of end-to-end testing using Cypress. <br/>
+                        ● Performed manual testing and regression testing leading up to a release.
+                        {" "}
                         </p>
                       </div>
                     </li>
@@ -154,9 +155,11 @@ const About = () => {
                         </div>
                         <h3>Web Developer</h3>
                         <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
+                        ● Redesigned mission-critical web apps with Javascript, React, and Node.  <br/>
+                        ● Design and develop APIs using Node and various data technologies including Express middleware routing and Knex.  <br/>
+                        ● Performance tuning for both Frontend and Backend code using debugger, DevTools, console logs, and reproducing bugs.  <br/>
+                        ● Write unit, integration, and end-to-end test using Jest and Puppeteer.
+                        {" "}
                         </p>
                       </div>
                     </li>
@@ -168,9 +171,8 @@ const About = () => {
                         </div>
                         <h3>Financial Advisor</h3>
                         <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
+                        ● Serviced accounts for more than 100 clients with over $22 million in investment assets. <br/>
+                        ● Counseled clients on financial matters and provided recommendations on investment opportunities, products and services based on client needs and asset availability.{" "}
                         </p>
                       </div>
                     </li>
@@ -206,9 +208,7 @@ const About = () => {
                         </div>
                         <h3>Engineering Immersion</h3>
                         <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
+                        {" "}
                         </p>
                       </div>
                     </li>
@@ -220,9 +220,7 @@ const About = () => {
                         </div>
                         <h3>Bachelor of Business Administration</h3>
                         <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
+                          {" "}
                         </p>
                       </div>
                     </li>
@@ -294,6 +292,20 @@ const About = () => {
                   <div className="progress_item open" data-value={85}>
                     <div className="item_in">
                       <h3 className="progress_title">PostgreSQL</h3>
+                      <span
+                        className="progress_percent"
+                        style={{ right: "0%" }}
+                      >
+                        {/* 85% */}
+                      </span>
+                      <div className="bg_wrap">
+                        <div className="progress_bg" style={{ width: "0%" }} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="progress_item open" data-value={85}>
+                    <div className="item_in">
+                      <h3 className="progress_title">Cypress</h3>
                       <span
                         className="progress_percent"
                         style={{ right: "0%" }}

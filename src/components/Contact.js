@@ -1,19 +1,19 @@
 import { useState } from "react";
 const Contact = () => {
-  const [form, setForm] = useState({ email: "", name: "", phone: "", msg: "" });
+  const [form, setForm] = useState({ email: "", name: "", subject: "", message: "" });
   const [active, setActive] = useState(null);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const { email, name, phone, msg } = form;
+  const { email, name, subject, message } = form;
   const onSubmit = (e) => {
     e.preventDefault();
-    if (email && name && phone && msg) {
+    if (email && name && subject && message) {
       setSuccess(true);
       setTimeout(() => {
-        setForm({ email: "", name: "", phone: "", msg: "" });
+        setForm({ email: "", name: "", subject: "", message: "" });
         setSuccess(false);
       }, 2000);
     } else {
@@ -72,6 +72,7 @@ const Contact = () => {
                       name="name"
                       id="name"
                       type="text"
+                      required
                     />
                     <span className="moving_placeholder">Name *</span>
                   </div>
@@ -90,6 +91,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       type="email"
+                      required
                     />
                     <span className="moving_placeholder">Email *</span>
                   </div>
@@ -97,34 +99,36 @@ const Contact = () => {
                 <div className="item">
                   <div
                     className={`input_wrapper ${
-                      active === "phone" || phone ? "active" : ""
+                      active === "subject" || subject ? "active" : ""
                     }`}
                   >
                     <input
-                      onFocus={() => setActive("phone")}
+                      onFocus={() => setActive("subject")}
                       onBlur={() => setActive(null)}
-                      id="phone"
+                      id="subject"
                       onChange={(e) => onChange(e)}
-                      value={phone}
-                      name="phone"
+                      value={subject}
+                      name="subject"
                       type="text"
+                      required
                     />
-                    <span className="moving_placeholder">Phone</span>
+                    <span className="moving_placeholder">Subject</span>
                   </div>
                 </div>
                 <div className="item">
                   <div
                     className={`input_wrapper ${
-                      active === "message" || msg ? "active" : ""
+                      active === "message" || message ? "active" : ""
                     }`}
                   >
                     <textarea
                       onFocus={() => setActive("message")}
                       onBlur={() => setActive(null)}
-                      name="msg"
+                      name="message"
                       onChange={(e) => onChange(e)}
-                      value={msg}
+                      value={message}
                       id="message"
+                      required
                     />
                     <span className="moving_placeholder">Message</span>
                   </div>
@@ -153,8 +157,8 @@ const Contact = () => {
               <a href="tel:+7068980751">(+706) 898-0751</a>
             </h3> */}
             <p>
-              <a className="fn__link" href="mailto:xevierturrubiartes@gmail.com">
-                xevierturrubiartes@gmail.com
+              <a className="fn__link" href="mailto:xevier.dev@gmail.com">
+                xevier.dev@gmail.com
               </a>
             </p>
           </div>
