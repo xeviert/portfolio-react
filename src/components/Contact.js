@@ -35,13 +35,13 @@ const Contact = () => {
       e.target.reset();
       setTimeout(() => {
         setForm({ email: '', name: '', subject: '', message: '' });
-        setSuccess(false);
       });
     } else {
       setError(true);
+      setSuccess(false);
       (error) => {
-        console.log(error)
-      }
+        console.log(error);
+      };
       setTimeout(() => {
         setError(false);
       }, 2000);
@@ -74,12 +74,14 @@ const Contact = () => {
                 Your message has been received, we will contact you soon.
               </span>
             </div>
+
             <div
               className="empty_notice"
               style={{ display: error ? 'block' : 'none' }}
             >
               <span>Please Fill Required Fields!</span>
             </div>
+
             {/* */}
             <div className="items_wrap">
               <div className="items">
