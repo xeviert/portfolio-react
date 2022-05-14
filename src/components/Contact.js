@@ -1,6 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
-  const [form, setForm] = useState({ email: "", name: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    email: '',
+    name: '',
+    subject: '',
+    message: '',
+  });
+
   const [active, setActive] = useState(null);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -8,21 +16,38 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   const { email, name, subject, message } = form;
+
   const onSubmit = (e) => {
     e.preventDefault();
+
     if (email && name && subject && message) {
       setSuccess(true);
+      emailjs
+        .sendForm(
+          'service_gqjceqa',
+          'template_wz583e7',
+          e.target,
+          'bOBPvsrEac-7DQaGD'
+        )
+        .then((result) => {
+          console.log(result.text);
+        }, 2000);
+      e.target.reset();
       setTimeout(() => {
-        setForm({ email: "", name: "", subject: "", message: "" });
+        setForm({ email: '', name: '', subject: '', message: '' });
         setSuccess(false);
-      }, 2000);
+      });
     } else {
       setError(true);
+      (error) => {
+        console.log(error)
+      }
       setTimeout(() => {
         setError(false);
       }, 2000);
     }
   };
+
   return (
     <section id="contact">
       <div className="container">
@@ -32,8 +57,8 @@ const Contact = () => {
             <h3 className="subtitle">Contact</h3>
             <h3 className="title">Get In Touch</h3>
             <p className="desc">
-              If you have any suggestion, project ideas, or even if you want to say
-              “hi”, please fill out the form below and I will reply you
+              If you have any suggestion, project ideas, or even if you want to
+              say “hi”, please fill out the form below and I will reply you
               shortly.
             </p>
           </div>
@@ -43,7 +68,7 @@ const Contact = () => {
             <div
               className="success"
               data-success="Your message has been received, we will contact you soon."
-              style={{ display: success ? "block" : "none" }}
+              style={{ display: success ? 'block' : 'none' }}
             >
               <span className="contact_success">
                 Your message has been received, we will contact you soon.
@@ -51,7 +76,7 @@ const Contact = () => {
             </div>
             <div
               className="empty_notice"
-              style={{ display: error ? "block" : "none" }}
+              style={{ display: error ? 'block' : 'none' }}
             >
               <span>Please Fill Required Fields!</span>
             </div>
@@ -61,11 +86,11 @@ const Contact = () => {
                 <div className="item half">
                   <div
                     className={`input_wrapper ${
-                      active === "name" || name ? "active" : ""
+                      active === 'name' || name ? 'active' : ''
                     }`}
                   >
                     <input
-                      onFocus={() => setActive("name")}
+                      onFocus={() => setActive('name')}
                       onBlur={() => setActive(null)}
                       onChange={(e) => onChange(e)}
                       value={name}
@@ -80,11 +105,11 @@ const Contact = () => {
                 <div className="item half">
                   <div
                     className={`input_wrapper ${
-                      active === "email" || email ? "active" : ""
+                      active === 'email' || email ? 'active' : ''
                     }`}
                   >
                     <input
-                      onFocus={() => setActive("email")}
+                      onFocus={() => setActive('email')}
                       onBlur={() => setActive(null)}
                       onChange={(e) => onChange(e)}
                       value={email}
@@ -99,11 +124,11 @@ const Contact = () => {
                 <div className="item">
                   <div
                     className={`input_wrapper ${
-                      active === "subject" || subject ? "active" : ""
+                      active === 'subject' || subject ? 'active' : ''
                     }`}
                   >
                     <input
-                      onFocus={() => setActive("subject")}
+                      onFocus={() => setActive('subject')}
                       onBlur={() => setActive(null)}
                       id="subject"
                       onChange={(e) => onChange(e)}
@@ -118,11 +143,11 @@ const Contact = () => {
                 <div className="item">
                   <div
                     className={`input_wrapper ${
-                      active === "message" || message ? "active" : ""
+                      active === 'message' || message ? 'active' : ''
                     }`}
                   >
                     <textarea
-                      onFocus={() => setActive("message")}
+                      onFocus={() => setActive('message')}
                       onBlur={() => setActive(null)}
                       name="message"
                       onChange={(e) => onChange(e)}
