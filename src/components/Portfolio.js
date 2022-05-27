@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { portfolioSliderProps } from "../sliderProps";
-import Modalbox from "./Modalbox";
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { portfolioSliderProps } from '../sliderProps';
+import Modalbox from './Modalbox';
 const Portfolio = () => {
   const [modal, setModal] = useState(false);
   const [modalValue, setModalValue] = useState(null);
@@ -43,7 +43,10 @@ const Portfolio = () => {
             >
               <div className="img_holder">
                 <img src="img/portfolio/mass-home.png" alt="image" />
-                <div className="abs_img" data-bg-img="img/portfolio/mass-home.png" />
+                <div
+                  className="abs_img"
+                  data-bg-img="img/portfolio/mass-home.png"
+                />
               </div>
               <div className="title_holder">
                 <p>illustration, design</p>
@@ -56,7 +59,10 @@ const Portfolio = () => {
                 <h3 className="fn__title">Sweet Cherry</h3>
                 <div className="img_holder">
                   <img src="img/portfolio/mass-home.png" alt="image" />
-                  <div className="abs_img" data-bg-img="img/portfolio/mass-home.png" />
+                  <div
+                    className="abs_img"
+                    data-bg-img="img/portfolio/mass-home.png"
+                  />
                 </div>
                 <p className="fn__desc">
                   Sed ornare tellus a odio bibendum, at tristique sapien
@@ -75,6 +81,7 @@ const Portfolio = () => {
                 </p>
               </div>
             </SwiperSlide>
+
             <SwiperSlide
               className="item modal_item"
               onClick={() => {
@@ -85,7 +92,10 @@ const Portfolio = () => {
             >
               <div className="img_holder">
                 <img src="img/portfolio/neighbr-home.png" alt="image" />
-                <div className="abs_img" data-bg-img="img/portfolio/neighbr-home.png" />
+                <div
+                  className="abs_img"
+                  data-bg-img="img/portfolio/neighbr-home.png"
+                />
               </div>
               <div className="title_holder">
                 <p>web, mobile, online</p>
@@ -98,7 +108,10 @@ const Portfolio = () => {
                 <h3 className="fn__title">Delicious Fruit</h3>
                 <div className="img_holder">
                   <img src="img/portfolio/neighbr-home.png" alt="image" />
-                  <div className="abs_img" data-bg-img="img/portfolio/neighbr-home.png" />
+                  <div
+                    className="abs_img"
+                    data-bg-img="img/portfolio/neighbr-home.png"
+                  />
                 </div>
                 <p className="fn__desc">
                   Sed ornare tellus a odio bibendum, at tristique sapien
@@ -134,6 +147,7 @@ const Portfolio = () => {
                 </p>
               </div>
             </SwiperSlide>
+
             <SwiperSlide
               className="item modal_item"
               onClick={() => {
@@ -144,7 +158,10 @@ const Portfolio = () => {
             >
               <div className="img_holder">
                 <img src="img/portfolio/petful.png" alt="image" />
-                <div className="abs_img" data-bg-img="img/portfolio/petful.png" />
+                <div
+                  className="abs_img"
+                  data-bg-img="img/portfolio/petful.png"
+                />
               </div>
               <div className="title_holder">
                 <p>design, vector</p>
@@ -193,6 +210,7 @@ const Portfolio = () => {
                 </p>
               </div>
             </SwiperSlide>
+
             <SwiperSlide
               className="item modal_item"
               onClick={() => {
@@ -203,7 +221,10 @@ const Portfolio = () => {
             >
               <div className="img_holder">
                 <img src="img/portfolio/spaced-rep.png" alt="image" />
-                <div className="abs_img" data-bg-img="img/portfolio/spaced-rep.png" />
+                <div
+                  className="abs_img"
+                  data-bg-img="img/portfolio/spaced-rep.png"
+                />
               </div>
               <div className="title_holder">
                 <p>mobile, design</p>
