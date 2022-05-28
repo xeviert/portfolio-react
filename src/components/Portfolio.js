@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { portfolioSliderProps } from '../sliderProps';
 import Modalbox from './Modalbox';
+
 const Portfolio = () => {
   const [modal, setModal] = useState(false);
   const [modalValue, setModalValue] = useState(null);
@@ -37,7 +38,7 @@ const Portfolio = () => {
               className="item modal_item"
               onClick={() => {
                 setModal(true);
-                setModalValue(1);
+                setModalValue(0);
               }}
               data-index={0}
             >
@@ -125,7 +126,7 @@ const Portfolio = () => {
               className="item modal_item"
               onClick={() => {
                 setModal(true);
-                setModalValue(4);
+                setModalValue(3);
               }}
               data-index={2}
             >
@@ -165,7 +166,7 @@ const Portfolio = () => {
               className="item modal_item"
               onClick={() => {
                 setModal(true);
-                setModalValue(6);
+                setModalValue(4);
               }}
               data-index={3}
             >
