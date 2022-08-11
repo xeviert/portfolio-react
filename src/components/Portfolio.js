@@ -39,7 +39,7 @@ const Portfolio = () => {
               className="item modal_item"
               onClick={() => {
                 setModal(true);
-                setModalValue(1);
+                setModalValue(0);
               }}
               data-index={0}
             >
