@@ -3,7 +3,7 @@ import SwiperCore, {
   EffectFade,
   Navigation,
   Pagination,
-} from "swiper";
+} from 'swiper';
 SwiperCore.use([Pagination, Navigation, Autoplay, EffectFade]);
 
 export const portfolioSliderProps = {
@@ -16,8 +16,8 @@ export const portfolioSliderProps = {
   //   disableOnInteraction: false,
   // },
   navigation: {
-    nextEl: ".next",
-    prevEl: ".prev",
+    nextEl: '.next',
+    prevEl: '.prev',
   },
   breakpoints: {
     480: {
@@ -33,12 +33,12 @@ export const customersSliderProps = {
   loop: true,
   spaceBetween: 30,
   speed: 1000,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
-    nextEl: ".next",
-    prevEl: ".prev",
+    nextEl: '.next',
+    prevEl: '.prev',
   },
 };
