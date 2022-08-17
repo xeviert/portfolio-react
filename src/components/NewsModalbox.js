@@ -6,7 +6,7 @@ const NewsModalbox = ({ close, value }) => {
     {
       title:
         "Five Solid Evidences Attending Design Is Good For Your Career Development.",
-      date: "September 22, 2021",
+      date: "M.A.S.S.",
       desc: [
         { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
       ]
@@ -14,43 +14,26 @@ const NewsModalbox = ({ close, value }) => {
     {
       title:
         "Ten Mind-Blowing Reasons Why Design Is Using This Technique For Exposure.",
-      date: "September 22, 2021",
+      date: "Neighbr",
       desc: [
         { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
       ]
     },
     {
       title: "I Will Tell You The Truth About Design In The Next 60  Seconds.",
-      date: "September 04, 2021",
+      date: "Petful",
       desc: [
         { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
       ]
     },
     {
       title: "What You Know About Design And What You Don't Know About Design.",
-      date: "August 18, 2021",
+      date: "Lango",
       desc: [
         { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
       ]
 
-    },
-    {
-      title:
-        "Forgive Yourself for Not Being Perfect. Then Do It Again Tomorrow.",
-      date: "August 15, 2021",
-      desc: [
-        { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
-      ]
-
-    },
-    {
-      title: "Why Decorating Your Home Is Good for Your Mental Health",
-      date: "August 01, 2021",
-      desc: [
-        { p: "Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci. Proin vel hendrerit ex. Vivamus ut ex at nunc consectetur efficitur ut quis est. Proin posuere orci eget vulputate fringilla. Curabitur placerat massa eget efficitur cursus. Sed sollicitudin rhoncus blandit. Nam accumsan vestibulum enim. Sed rutrum eu leo pellentesque lobortis. Integer ornare fringilla arcu, eu mattis risus convallis in." }
-      ]
-
-    },
+    }
   ];
 
   const [index, setIndex] = useState(value);
@@ -85,7 +68,7 @@ const NewsModalbox = ({ close, value }) => {
               (d, i) =>
                 i + 1 == index && (
                   <div key={i}>
-                    <p className="fn__cat">August 18, 2021</p>
+                    <p className="fn__cat">{d.date}</p>
                     <p className="fn__cat">{d.tag}</p>
                     <h3 className="fn__title">{d.name}</h3>
                     <div className="img_holder">
@@ -104,8 +87,6 @@ const NewsModalbox = ({ close, value }) => {
                   </div>
                 )
             )}
-
-
           </div>
 
           <div className="fn__nav" data-from="portfolio" data-index="1">
@@ -114,7 +95,7 @@ const NewsModalbox = ({ close, value }) => {
               className="prev"
               onClick={(e) => {
                 e.preventDefault();
-                setIndex(index == 1 ? 5 : index - 1);
+                setIndex(index == 1 ? 4 : index - 1);
               }}
             >
               <span className="text">Prev</span>
@@ -127,7 +108,7 @@ const NewsModalbox = ({ close, value }) => {
               className="next"
               onClick={(e) => {
                 e.preventDefault();
-                setIndex(index == 5 ? 1 : index + 1);
+                setIndex(index == 4 ? 1 : index + 1);
               }}
             >
               <span className="text">Next</span>

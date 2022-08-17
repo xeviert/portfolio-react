@@ -41,6 +41,8 @@ const News = () => {
           {/* Blog List */}
           <div className="resumo_fn_blog_list">
             <ul className="modal_items" data-from="blog" data-count={5}>
+
+
               <li>
                 <div
                   className="item modal_item"
@@ -48,19 +50,18 @@ const News = () => {
                   data-index={1}
                 >
                   <div className="img_holder">
-                    <img src="img/thumb/square.jpg" alt="image" />
-                    <div className="abs_img" data-bg-img="img/blog/1.jpg" />
+                    <img src="img/portfolio/mass-home.png" alt="image" />
+                    <div className="abs_img" data-bg-img="img/portfolio/mass-home.png" />
                   </div>
                   <div className="title_holder">
-                    <p>September 22, 2021</p>
+                    <p>P.E.R.N. Stack</p>
                     <h3>
                       <a href="#">
-                        Five Solid Evidences Attending Design Is Good For Your
-                        Career Development.
+                        M.A.S.S.
                       </a>
                     </h3>
                   </div>
-                  <div className="fn__hidden">
+                  {/* <div className="fn__hidden">
                     <p className="fn__cat">September 22, 2021</p>
                     <h3 className="fn__title">
                       Five Solid Evidences Attending Design Is Good For Your
@@ -118,9 +119,11 @@ const News = () => {
                       Morbi sodales nunc ultrices justo pellentesque, ac mattis
                       mi sagittis. Morbi ut consectetur neque.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </li>
+
+
               <li>
                 <div
                   className="item modal_item"
@@ -128,19 +131,18 @@ const News = () => {
                   data-index={2}
                 >
                   <div className="img_holder">
-                    <img src="img/thumb/square.jpg" alt="image" />
-                    <div className="abs_img" data-bg-img="img/blog/2.jpg" />
+                    <img src="img/portfolio/neighbr-home.png" alt="image" />
+                    <div className="abs_img" data-bg-img="img/portfolio/neighbr-home.png" />
                   </div>
                   <div className="title_holder">
-                    <p>September 17, 2021</p>
+                    <p>P.E.R.N. Stack</p>
                     <h3>
                       <a href="#">
-                        Ten Mind-Blowing Reasons Why Design Is Using This
-                        Technique For Exposure.
+                        Neighbr
                       </a>
                     </h3>
                   </div>
-                  <div className="fn__hidden">
+                  {/* <div className="fn__hidden">
                     <p className="fn__cat">September 17, 2021</p>
                     <h3 className="fn__title">
                       Ten Mind-Blowing Reasons Why Design Is Using This
@@ -198,9 +200,11 @@ const News = () => {
                       Morbi sodales nunc ultrices justo pellentesque, ac mattis
                       mi sagittis. Morbi ut consectetur neque.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </li>
+
+
               <li>
                 <div
                   className="item modal_item"
@@ -208,19 +212,18 @@ const News = () => {
                   data-index={3}
                 >
                   <div className="img_holder">
-                    <img src="img/thumb/square.jpg" alt="image" />
-                    <div className="abs_img" data-bg-img="img/blog/3.jpg" />
+                    <img src="img/portfolio/petful.png" alt="image" />
+                    <div className="abs_img" data-bg-img="img/portfolio/petful.png" />
                   </div>
                   <div className="title_holder">
-                    <p>September 04, 2021</p>
+                    <p>JavaScript, React, Node.js, Express.js</p>
                     <h3>
                       <a href="#">
-                        I Will Tell You The Truth About Design In The Next 60
-                        Seconds.
+                        Petful
                       </a>
                     </h3>
                   </div>
-                  <div className="fn__hidden">
+                  {/* <div className="fn__hidden">
                     <p className="fn__cat">September 04, 2021</p>
                     <h3 className="fn__title">
                       I Will Tell You The Truth About Design In The Next 60
@@ -278,9 +281,11 @@ const News = () => {
                       Morbi sodales nunc ultrices justo pellentesque, ac mattis
                       mi sagittis. Morbi ut consectetur neque.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </li>
+
+
               <li>
                 <div
                   className="item modal_item"
@@ -288,19 +293,18 @@ const News = () => {
                   data-index={4}
                 >
                   <div className="img_holder">
-                    <img src="img/thumb/square.jpg" alt="image" />
-                    <div className="abs_img" data-bg-img="img/blog/4.jpg" />
+                    <img src="img/portfolio/spaced-rep.png" alt="image" />
+                    <div className="abs_img" data-bg-img="img/portfolio/spaced-rep.png" />
                   </div>
                   <div className="title_holder">
-                    <p>August 18, 2021</p>
+                    <p>P.E.R.N. Stack</p>
                     <h3>
                       <a href="#">
-                        {`What You Know About Design And What You Don't
-                                  Know About Design.`}
+                        Lango
                       </a>
                     </h3>
                   </div>
-                  <div className="fn__hidden">
+                  {/* <div className="fn__hidden">
                     <p className="fn__cat">August 18, 2021</p>
                     <h3 className="fn__title">
                       {` What You Know About Design And What You Don't
@@ -358,10 +362,12 @@ const News = () => {
                       Morbi sodales nunc ultrices justo pellentesque, ac mattis
                       mi sagittis. Morbi ut consectetur neque.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </li>
-              <li className={!hiddenItem ? "" : "be_animated"}>
+
+
+              {/* <li className={!hiddenItem ? "" : "be_animated"}>
                 <div
                   className="item modal_item"
                   onClick={() => modalValueSet(5)}
@@ -518,9 +524,9 @@ const News = () => {
                     </p>
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ul>
-            <div className="clearfix" />
+            {/* <div className="clearfix" />
             <div className="load_more">
               <a
                 href="#"
@@ -543,7 +549,7 @@ const News = () => {
                   <span />
                 </span>
               </a>
-            </div>
+            </div> */}
           </div>
           {/* /Blog List */}
         </div>
