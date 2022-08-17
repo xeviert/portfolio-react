@@ -1481,6 +1481,13 @@ a:focus {
 #news .resumo_fn_main_title{
 	margin-bottom: 70px;
 }
+.repo-links {
+	text-align: center;
+	margin-top: 30px;
+}
+.repo-live-links, .repo-live-links:visited {
+	color: rgb(207, 218, 255);
+}
 .resumo_fn_blog_list ul{
 	margin: 0;
 	padding: 0;
@@ -2540,6 +2547,7 @@ body.light .resumo_fn_modalbox .modal_content::-webkit-scrollbar-thumb{border-co
 }
 .resumo_fn_modalbox .fn__desc{
 	margin-bottom: 28px;
+	font-size: 24px;
 }
 .resumo_fn_modalbox .fn__desc:last-child{
 	margin-bottom: 0;
@@ -2696,6 +2704,7 @@ body.light .resumo_fn_modalbox .modal_content::-webkit-scrollbar-thumb{border-co
 @media(max-width: 1040px){
 	.resumo_fn_modalbox .box_inner{max-width: 90%;}
 	.resumo_fn_modalbox .modal_in{padding-left: 20px;padding-right: 20px;}
+	.resumo_fn_modalbox .fn__desc{font-size: 18px;}
 	.fn__nav .next{padding-right: 66px;}
 	.fn__nav .next .arrow_wrapper{right: 20px;}
 	.fn__nav .prev{padding-left: 66px;}
