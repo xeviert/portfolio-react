@@ -5,7 +5,7 @@ const NewsModalbox = ({ close, value }) => {
   const data = [
     {
       title:
-        "M.A.S.S.",
+        "M.A.S.S. (Mutual Aid & Shared Support)",
       date: "Javascript, React, Express, Node, PostgreSQL",
       desc: [
         { p: "User registers with phone number, allows user to be as anonymous as possible. Logged in user is able to submit a list of things needed as well as a location of where the trusted admin is to drop off the requested items. Admin is able to see a list of orders with the items requested from all users.",
