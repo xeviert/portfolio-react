@@ -122,6 +122,15 @@ a:focus {
 /*------------------------------------------------------------------*/
 /*	03) Site Right
 /*------------------------------------------------------------------*/
+/*  */
+.experience-list li::before {
+	color: white;
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	font-weight: 1000; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 .resumo_fn_right{
 	width: 44%;
 	min-height: 100vh;
@@ -187,6 +196,7 @@ a:focus {
 	right: 0;
 	top: 0;
 	
+	border-radius: 6px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1524,6 +1534,7 @@ a:focus {
 	right: 0;
 	bottom: 0;
 	
+	border-radius: 6px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
