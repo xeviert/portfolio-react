@@ -65,7 +65,7 @@ const About = () => {
               <div className='resumo_fn_cv_btn'>
                 <a
                   href='img/Xevier-Turrubiartes-Resume.pdf'
-                  download='Xevier-T-Resume'
+                  download='Xevier Turrubiartes Resume'
                 >
                   <span className='icon'>
                     <svg

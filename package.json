@@ -1,5 +1,8 @@
 {
-  "name": "resumo-react",
+  "name": "personal-website",
+  "homepage": "https://xevier.online/",
+  "version": "1.0.0",
+  "description": "my personal site",
   "private": true,
   "scripts": {
     "dev": "next dev",
