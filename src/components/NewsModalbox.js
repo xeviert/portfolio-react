@@ -98,14 +98,17 @@ const NewsModalbox = ({ close, value }) => {
                           <a 
                             className="repo-live-links"
                             target="_blank"
+                            rel="noreferrer"
                             href={`${des.l}`}>Live App</a> | 
                           <a 
                             className="repo-live-links"
                             target="_blank" 
+                            rel="noreferrer"
                             href={`${des.c}`}> Client Repo</a> | 
                           <a 
                             className="repo-live-links" 
                             target="_blank"
+                            rel="noreferrer"
                             href={`${des.s}`}> Server Repo</a>
                         </div>
                       </p>

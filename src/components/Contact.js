@@ -193,6 +193,7 @@ const Contact = () => {
                 className='fn__link'
                 href='https://github.com/xeviert'
                 target='_blank'
+                rel="noreferrer"
               >
                 GitHub
               </a>
@@ -202,6 +203,7 @@ const Contact = () => {
                 className='fn__link'
                 href='https://www.linkedin.com/in/xevierturrubiartes/'
                 target='_blank'
+                rel="noreferrer"
               >
                 Linkedin
               </a>
