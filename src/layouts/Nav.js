@@ -57,7 +57,7 @@ const Nav = ({ close, trigger }) => {
             </ul>
           </nav>
           <div className={`nav_footer ${toggle_}`}>
-            <div className="social">
+            {/* <div className="social">
               <ul>
                 <li>
                   <a href="#" target="_blank">
@@ -193,7 +193,7 @@ const Nav = ({ close, trigger }) => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             {/* <div className="copyright">
               {" "}
               Developed by &nbsp;

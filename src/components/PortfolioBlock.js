@@ -11,7 +11,7 @@ const PortfolioBlock = () => {
   };
 
   return (
-    <section id='news'>
+    <section id='portfolio'>
       {modal && <NewsModalbox close={setModal} value={modalValue} />}
       <div className='container'>
         <div className='roww'>
