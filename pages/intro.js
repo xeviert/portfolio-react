@@ -21,7 +21,7 @@ const Intro = () => {
             <h3>
               <Link href="/intro">Xevier T.</Link>
             </h3>
-            <p>Creative personal website template</p>
+            <p>Personal website with portfolio</p>
           </div>
           <div className="v_list">
             <div className="left">
@@ -42,19 +42,6 @@ const Intro = () => {
         </div>
         <footer id="footer">
           <div className="footer_content">
-            <p>
-              Copyright © {new Date().getFullYear()}. All rights reserved.{" "}
-              <br />
-              Designed &amp; Developed by{" "}
-              <a
-                className="fn__link"
-                href="https://themeforest.net/user/trendycoder"
-                target="_blank"
-                rel="noreferrer"
-              >
-                TrendyCoder
-              </a>
-            </p>
           </div>
         </footer>
       </div>

@@ -122,6 +122,15 @@ a:focus {
 /*------------------------------------------------------------------*/
 /*	03) Site Right
 /*------------------------------------------------------------------*/
+/*  */
+.experience-list li::before {
+	color: white;
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	font-weight: 1000; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 .resumo_fn_right{
 	width: 44%;
 	min-height: 100vh;
@@ -187,6 +196,7 @@ a:focus {
 	right: 0;
 	top: 0;
 	
+	border-radius: 6px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1481,6 +1491,13 @@ a:focus {
 #news .resumo_fn_main_title{
 	margin-bottom: 70px;
 }
+.repo-links {
+	text-align: center;
+	margin-top: 30px;
+}
+.repo-live-links, .repo-live-links:visited {
+	color: rgb(207, 218, 255);
+}
 .resumo_fn_blog_list ul{
 	margin: 0;
 	padding: 0;
@@ -1517,6 +1534,7 @@ a:focus {
 	right: 0;
 	bottom: 0;
 	
+	border-radius: 6px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1533,15 +1551,15 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 9px;
-	font-size: 14px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 .resumo_fn_blog_list .title_holder h3{
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 30px;
+	line-height: 28px;
 }
 .resumo_fn_blog_list .title_holder h3 a{
 	text-decoration: none;
@@ -2540,6 +2558,7 @@ body.light .resumo_fn_modalbox .modal_content::-webkit-scrollbar-thumb{border-co
 }
 .resumo_fn_modalbox .fn__desc{
 	margin-bottom: 28px;
+	font-size: 24px;
 }
 .resumo_fn_modalbox .fn__desc:last-child{
 	margin-bottom: 0;
@@ -2696,6 +2715,7 @@ body.light .resumo_fn_modalbox .modal_content::-webkit-scrollbar-thumb{border-co
 @media(max-width: 1040px){
 	.resumo_fn_modalbox .box_inner{max-width: 90%;}
 	.resumo_fn_modalbox .modal_in{padding-left: 20px;padding-right: 20px;}
+	.resumo_fn_modalbox .fn__desc{font-size: 18px;}
 	.fn__nav .next{padding-right: 66px;}
 	.fn__nav .next .arrow_wrapper{right: 20px;}
 	.fn__nav .prev{padding-left: 66px;}

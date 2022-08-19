@@ -11,10 +11,10 @@ export const portfolioSliderProps = {
   loop: true,
   spaceBetween: 30,
   speed: 1000,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',

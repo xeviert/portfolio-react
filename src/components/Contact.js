@@ -49,14 +49,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <div className="container">
-        <div className="roww resumo_fn_contact">
+    <section id='contact'>
+      <div className='container'>
+        <div className='roww resumo_fn_contact'>
           {/* Main Title */}
-          <div className="resumo_fn_main_title">
-            <h3 className="subtitle">Contact</h3>
-            <h3 className="title">Get In Touch</h3>
-            <p className="desc">
+          <div className='resumo_fn_main_title'>
+            <h3 className='subtitle'>Contact</h3>
+            <h3 className='title'>Get In Touch</h3>
+            <p className='desc'>
               If you have any suggestion, project ideas, or even if you want to
               say “hi”, please fill out the form below and I will reply you
               shortly.
@@ -64,28 +64,28 @@ const Contact = () => {
           </div>
           {/* /Main Title */}
           {/* Contact Form */}
-          <form className="contact_form" onSubmit={(e) => onSubmit(e)}>
+          <form className='contact_form' onSubmit={(e) => onSubmit(e)}>
             <div
-              className="success"
-              data-success="Your message has been received, we will contact you soon."
+              className='success'
+              data-success='Your message has been received, we will contact you soon.'
               style={{ display: success ? 'block' : 'none' }}
             >
-              <span className="contact_success">
+              <span className='contact_success'>
                 Your message has been received, we will contact you soon.
               </span>
             </div>
 
             <div
-              className="empty_notice"
+              className='empty_notice'
               style={{ display: error ? 'block' : 'none' }}
             >
               <span>Please Fill Required Fields!</span>
             </div>
 
             {/* */}
-            <div className="items_wrap">
-              <div className="items">
-                <div className="item half">
+            <div className='items_wrap'>
+              <div className='items'>
+                <div className='item half'>
                   <div
                     className={`input_wrapper ${
                       active === 'name' || name ? 'active' : ''
@@ -96,15 +96,15 @@ const Contact = () => {
                       onBlur={() => setActive(null)}
                       onChange={(e) => onChange(e)}
                       value={name}
-                      name="name"
-                      id="name"
-                      type="text"
+                      name='name'
+                      id='name'
+                      type='text'
                       required
                     />
-                    <span className="moving_placeholder">Name *</span>
+                    <span className='moving_placeholder'>Name *</span>
                   </div>
                 </div>
-                <div className="item half">
+                <div className='item half'>
                   <div
                     className={`input_wrapper ${
                       active === 'email' || email ? 'active' : ''
@@ -115,15 +115,15 @@ const Contact = () => {
                       onBlur={() => setActive(null)}
                       onChange={(e) => onChange(e)}
                       value={email}
-                      name="email"
-                      id="email"
-                      type="email"
+                      name='email'
+                      id='email'
+                      type='email'
                       required
                     />
-                    <span className="moving_placeholder">Email *</span>
+                    <span className='moving_placeholder'>Email *</span>
                   </div>
                 </div>
-                <div className="item">
+                <div className='item'>
                   <div
                     className={`input_wrapper ${
                       active === 'subject' || subject ? 'active' : ''
@@ -132,17 +132,17 @@ const Contact = () => {
                     <input
                       onFocus={() => setActive('subject')}
                       onBlur={() => setActive(null)}
-                      id="subject"
+                      id='subject'
                       onChange={(e) => onChange(e)}
                       value={subject}
-                      name="subject"
-                      type="text"
+                      name='subject'
+                      type='text'
                       required
                     />
-                    <span className="moving_placeholder">Subject</span>
+                    <span className='moving_placeholder'>Subject</span>
                   </div>
                 </div>
-                <div className="item">
+                <div className='item'>
                   <div
                     className={`input_wrapper ${
                       active === 'message' || message ? 'active' : ''
@@ -151,24 +151,24 @@ const Contact = () => {
                     <textarea
                       onFocus={() => setActive('message')}
                       onBlur={() => setActive(null)}
-                      name="message"
+                      name='message'
                       onChange={(e) => onChange(e)}
                       value={message}
-                      id="message"
+                      id='message'
                       required
                     />
-                    <span className="moving_placeholder">Message</span>
+                    <span className='moving_placeholder'>Message</span>
                   </div>
                 </div>
-                <div className="item">
+                <div className='item'>
                   {/* <a id="send_message" href="#">
                     Send Message
                   </a> */}
                   <input
-                    className="a"
-                    type="submit"
-                    id="send_message"
-                    value="Send Message"
+                    className='a'
+                    type='submit'
+                    id='send_message'
+                    value='Send Message'
                   />
                 </div>
               </div>
@@ -176,7 +176,7 @@ const Contact = () => {
           </form>
           {/* /Contact Form */}
           {/* Contact Info */}
-          <div className="resumo_fn_contact_info">
+          <div className='resumo_fn_contact_info'>
             <p>Location</p>
             <h3>Austin, TX</h3>
             {/* <p>Phone</p>
@@ -184,8 +184,26 @@ const Contact = () => {
               <a href="tel:+7068980751">(+706) 898-0751</a>
             </h3> */}
             <p>
-              <a className="fn__link" href="mailto:xevier.dev@gmail.com">
+              <a className='fn__link' href='mailto:xevier.dev@gmail.com'>
                 xevier.dev@gmail.com
+              </a>
+              <br />
+              <br />
+              <a
+                className='fn__link'
+                href='https://github.com/xeviert'
+                target='_blank'
+              >
+                GitHub
+              </a>
+              <br />
+              <br />
+              <a
+                className='fn__link'
+                href='https://www.linkedin.com/in/xevierturrubiartes/'
+                target='_blank'
+              >
+                Linkedin
               </a>
             </p>
           </div>
