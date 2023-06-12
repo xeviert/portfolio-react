@@ -47,20 +47,20 @@ const PortfolioBlock = () => {
               <li>
                 <div
                   className='item modal_item'
-                  onClick={() => modalValueSet(2)}
-                  data-index={2}
+                  onClick={() => modalValueSet(4)}
+                  data-index={4}
                 >
                   <div className='img_holder'>
-                    <img src='img/portfolio/neighbr-home.png' alt='image' />
+                    <img src='img/portfolio/spaced-rep.png' alt='image' />
                     <div
                       className='abs_img'
-                      data-bg-img='img/portfolio/neighbr-home.png'
+                      data-bg-img='img/portfolio/spaced-rep.png'
                     />
                   </div>
                   <div className='title_holder'>
                     <p>PERN Stack</p>
                     <h3>
-                      <a href='#'>Neighbr</a>
+                      <a href='#'>Lango</a>
                     </h3>
                   </div>
                 </div>
@@ -91,24 +91,25 @@ const PortfolioBlock = () => {
               <li>
                 <div
                   className='item modal_item'
-                  onClick={() => modalValueSet(4)}
-                  data-index={4}
+                  onClick={() => modalValueSet(2)}
+                  data-index={2}
                 >
                   <div className='img_holder'>
-                    <img src='img/portfolio/spaced-rep.png' alt='image' />
+                    <img src='img/portfolio/neighbr-home.png' alt='image' />
                     <div
                       className='abs_img'
-                      data-bg-img='img/portfolio/spaced-rep.png'
+                      data-bg-img='img/portfolio/neighbr-home.png'
                     />
                   </div>
                   <div className='title_holder'>
                     <p>PERN Stack</p>
                     <h3>
-                      <a href='#'>Lango</a>
+                      <a href='#'>Neighbr</a>
                     </h3>
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
         </div>
