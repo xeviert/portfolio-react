@@ -136,8 +136,27 @@ const About = () => {
                     <li>
                       <div className='item'>
                         <div className='item_top'>
+                          <h5>Artificial Compute</h5>
+                          <span>( 06/2023 — Present )</span>
+                        </div>
+                        <h3>
+                          QA Engineer
+                        </h3>
+                        <p>
+                          <ul className='experience-list'>
+                            <li>
+                              Installed Microsoft Clarity and Intercom to the app to help UX researcher study target users
+                              to collect and analyze data that will help inform the product design process.
+                            </li>
+                          </ul>{' '}
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='item'>
+                        <div className='item_top'>
                           <h5>Rodeo Logistics</h5>
-                          <span>( 12/2021 — Today )</span>
+                          <span>( 12/2021 — 02/2023 )</span>
                         </div>
                         <h3>
                           Junior Software Engineer/Quality Assurance Engineer
