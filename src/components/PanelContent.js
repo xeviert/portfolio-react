@@ -4,7 +4,7 @@ const PanelContent = () => {
   useEffect(() => {
     const Typed = require("typed.js");
     new Typed(".animated_title", {
-      strings: ["Xevier Turrubiartes", "a Software Engineer", "a QA Engineer", "a Creative"],
+      strings: ["Xevier Turrubiartes", "a Software Engineer"],
       loop: true,
       smartBackspace: false,
       typeSpeed: 40,
@@ -32,7 +32,7 @@ const PanelContent = () => {
         <a href="#contact">
           <span className="circle" />
           <span className="text">
-            I’m open to hearing about new opportunities!
+            I’m open to new opportunities!
           </span>
         </a>
       </div>

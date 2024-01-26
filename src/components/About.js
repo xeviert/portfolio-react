@@ -12,7 +12,14 @@ const About = () => {
             <h3 className='subtitle'>About Me</h3>
             <h3 className='title'>Biography</h3>
             <p className='desc'>
-              {`Software engineer proficient in JavaScript, React, Node, Express, and PostgreSQL. I have 2 years of experience as a developer and 4 years of experience in the financial services industry. Both have allowed me to develop my problem-solving, assessment, and communication skills with stakeholders and partners.`}
+              {`As a versatile Software Developer, I bring experience in both 
+              front-end and back-end development, primarily using JavaScript and React along 
+              with its various frameworks like Redux, Express, and Typescript. My expertise 
+              extends to working with PostgreSQL and Knex as a JS query builder, 
+              demonstrating my ability to handle diverse technologies. Throughout my career, 
+              I’ve had the opportunity to explore and adapt to different technologies across 
+              various roles, continually expanding my skill set. I’m always eager to take on 
+              new challenges and contribute to innovative solutions.`}
             </p>
           </div>
           {/* /Main Title */}
@@ -140,13 +147,20 @@ const About = () => {
                           <span>( 06/2023 — Present )</span>
                         </div>
                         <h3>
-                          QA Engineer
+                          Consulting Software Engineer
                         </h3>
                         <p>
                           <ul className='experience-list'>
                             <li>
-                              Installed Microsoft Clarity and Intercom to the app to help UX researcher study target users
-                              to collect and analyze data that will help inform the product design process.
+                              Led the development of dynamic web applications using React and Redux as the sole front-end engineer, resulting in highly
+                              interactive and state-managed user interfaces.
+                            </li>
+                            <li>
+                              Implemented Microsoft Clarity, providing valuable user data to UX researchers and informing the product design process.
+                            </li>
+                            <li>
+                              Installed and customized the Intercom chatbot, tailoring its responses to the signed-in user for enhanced assistance and user
+                              experience.
                             </li>
                           </ul>{' '}
                         </p>
@@ -164,25 +178,26 @@ const About = () => {
                         <p>
                           <ul className='experience-list'>
                             <li>
-                              Collaborated with a cross-functional team to
-                              define features and build powerful and easy-to-use
-                              products and customer-facing workflow tools.
+                              Contributed significantly in a cross-functional team, helping to
+                              define features and build powerful, user-friendly products and
+                              customer-facing workflow tools.
                             </li>
                             <li>
-                              Conducted full lifecycle software development from
-                              planning to deployment and maintenance.
+                              Developed comprehensive test scripts using Cypress, enhancing the
+                              efficiency of automated software testing rounds.
                             </li>
                             <li>
-                              Documented technical specifications and project
-                              testing methods for future reference.
+                              Managed full lifecycle software development, from initial planning
+                              stages to deployment and ongoing maintenance, ensuring seamless product
+                              rollouts.
                             </li>
                             <li>
-                              Participate in code reviews with senior engineers
-                              to gain feedback and insight for improvements.
+                              Identified and documented bugs through rigorous regression testing,
+                              creating detailed tickets to facilitate bug reproduction and resolution.
                             </li>
                             <li>
-                              Produced test scripts using Cypress for new
-                              automated software testing rounds.
+                              Maintained comprehensive technical documentation, including specifications
+                              and testing methods, to support future project reference and continuity.
                             </li>
                           </ul>{' '}
                         </p>
@@ -198,18 +213,18 @@ const About = () => {
                         <p>
                           <ul className='experience-list'>
                             <li>
-                              Redesigned mission-critical web apps with
-                              Javascript, React, and Node.
+                              Revamped mission-critical web applications using Javascript,
+                              React, and Node, enhancing usability and performance.
                             </li>
                             <li>
-                              Design and develop APIs using Node and various
-                              data technologies including Express middleware
-                              routing and Knex.
+                              Designed and developed robust APIs using Node, Express
+                              middleware routing, and Knex, improving data accessibility
+                              and integration.
                             </li>
                             <li>
-                              Performance tuning for both Frontend and Backend
-                              code using debugger, DevTools, console logs, and
-                              reproducing bugs.
+                              Optimized performance of both frontend and backend
+                              code through debugging, DevTools, console logs, and
+                              bug reproduction, ensuring smooth and efficient operation.
                             </li>
                             <li>
                               Write unit, integration, and end-to-end test using
@@ -311,7 +326,7 @@ const About = () => {
                   </div>
                   <div className='progress_item open' data-value={80}>
                     <div className='item_in'>
-                      <h3 className='progress_title'>HTML5 &amp; CSS3</h3>
+                      <h3 className='progress_title'>React</h3>
                       <span
                         className='progress_percent'
                         style={{ right: '0%' }}
@@ -325,7 +340,7 @@ const About = () => {
                   </div>
                   <div className='progress_item open' data-value={95}>
                     <div className='item_in'>
-                      <h3 className='progress_title'>React</h3>
+                      <h3 className='progress_title'>Redux</h3>
                       <span
                         className='progress_percent'
                         style={{ right: '0%' }}
