@@ -73,16 +73,16 @@ const PortfolioBlock = () => {
                   data-index={3}
                 >
                   <div className='img_holder'>
-                    <img src='img/portfolio/petful.png' alt='image' />
+                    <img src='img/portfolio/carhub.png' alt='image' />
                     <div
                       className='abs_img'
-                      data-bg-img='img/portfolio/petful.png'
+                      data-bg-img='img/portfolio/carhub.png'
                     />
                   </div>
                   <div className='title_holder'>
-                    <p>JavaScript, React, Node.js, Express.js</p>
+                    <p>JavaScript, Next.js, Typescript, Tailwind</p>
                     <h3>
-                      <a href='#'>Petful</a>
+                      <a href='#'>Carhub</a>
                     </h3>
                   </div>
                 </div>

@@ -30,14 +30,14 @@ const NewsModalbox = ({ close, value }) => {
       ]
     },
     {
-      title: "Petful",
-      date: "Javascript, React, Node, Express",
+      title: "Carhub",
+      date: "JavaScript, Next.js, Typescript, Tailwind",
       desc: [
         {
-          p: "Pet adoption site where user submits their name and waits in line for others to adopt. Once it's user's turn, they get to adopt a cat or dog. This project is meant to show my understanding of the queue data structure.",
-          l: "https://petful-client-hazel.vercel.app/",
-          c: "https://github.com/xeviert/petful-client",
-          s: "https://github.com/xeviert/petful-server"
+          p: "Car rental site where user can search through cars to view rates and car specs, leveraging Next.js server-side rendering capabilities",
+          l: "https://carhub-azure.vercel.app/",
+          c: "https://github.com/xeviert/next-ts-car-shop",
+          s: "https://github.com/xeviert/next-ts-car-shop"
         }
       ]
     },
@@ -126,7 +126,7 @@ const NewsModalbox = ({ close, value }) => {
             )}
           </div>
 
-          <div className="fn__nav" data-from="portfolio" data-index="1">
+          {/* <div className="fn__nav" data-from="portfolio" data-index="1">
             <a
               href="#"
               className="prev"
@@ -153,7 +153,7 @@ const NewsModalbox = ({ close, value }) => {
                 <span className="arrow"></span>
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

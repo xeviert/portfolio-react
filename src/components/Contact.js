@@ -87,9 +87,8 @@ const Contact = () => {
               <div className='items'>
                 <div className='item half'>
                   <div
-                    className={`input_wrapper ${
-                      active === 'name' || name ? 'active' : ''
-                    }`}
+                    className={`input_wrapper ${active === 'name' || name ? 'active' : ''
+                      }`}
                   >
                     <input
                       onFocus={() => setActive('name')}
@@ -106,9 +105,8 @@ const Contact = () => {
                 </div>
                 <div className='item half'>
                   <div
-                    className={`input_wrapper ${
-                      active === 'email' || email ? 'active' : ''
-                    }`}
+                    className={`input_wrapper ${active === 'email' || email ? 'active' : ''
+                      }`}
                   >
                     <input
                       onFocus={() => setActive('email')}
@@ -125,9 +123,8 @@ const Contact = () => {
                 </div>
                 <div className='item'>
                   <div
-                    className={`input_wrapper ${
-                      active === 'subject' || subject ? 'active' : ''
-                    }`}
+                    className={`input_wrapper ${active === 'subject' || subject ? 'active' : ''
+                      }`}
                   >
                     <input
                       onFocus={() => setActive('subject')}
@@ -139,14 +136,13 @@ const Contact = () => {
                       type='text'
                       required
                     />
-                    <span className='moving_placeholder'>Subject</span>
+                    <span className='moving_placeholder'>Subject *</span>
                   </div>
                 </div>
                 <div className='item'>
                   <div
-                    className={`input_wrapper ${
-                      active === 'message' || message ? 'active' : ''
-                    }`}
+                    className={`input_wrapper ${active === 'message' || message ? 'active' : ''
+                      }`}
                   >
                     <textarea
                       onFocus={() => setActive('message')}
@@ -157,7 +153,7 @@ const Contact = () => {
                       id='message'
                       required
                     />
-                    <span className='moving_placeholder'>Message</span>
+                    <span className='moving_placeholder'>Message *</span>
                   </div>
                 </div>
                 <div className='item'>
