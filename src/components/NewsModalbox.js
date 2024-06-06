@@ -18,14 +18,14 @@ const NewsModalbox = ({ close, value }) => {
     },
     {
       title:
-        "Neighbr",
-      date: "Javascript, React, Express, Node, PostgreSQL",
+        "NearNet",
+      date: "Javascript, Next, React, Tailwind",
       desc: [
         {
-          p: "This application is meant to be used as an online bulletin board for your neighborhood but focused on asking for help and helping others. User creates an account and can see a feed of posts from users and things they need help with. The user can make a post themselves as well.",
-          l: "",
-          c: "https://github.com/xeviert/Neighbr",
-          s: "https://github.com/xeviert/neighbr-api"
+          p: "NearNet is a modern web application designed to facilitate neighborhood interactions and foster a sense of community among residents. Inspired by platforms like Nextdoor, NearNet allows users to connect, share, and engage with their local community through various features such as posting favors, profile management, and real-time updates.",
+          l: "https://nearnet.vercel.app/",
+          c: "https://github.com/xeviert/nearnet",
+          s: ""
         }
       ]
     },
@@ -37,7 +37,7 @@ const NewsModalbox = ({ close, value }) => {
           p: "Car rental site where user can search through cars to view rates and car specs, leveraging Next.js server-side rendering capabilities",
           l: "https://carhub-azure.vercel.app/",
           c: "https://github.com/xeviert/next-ts-car-shop",
-          s: "https://github.com/xeviert/next-ts-car-shop"
+          s: ""
         }
       ]
     },
@@ -107,16 +107,24 @@ const NewsModalbox = ({ close, value }) => {
                             target="_blank"
                             rel="noreferrer"
                             href={`${des.l}`}>Live App</a> |
+                          {" "}
                           <a
                             className="repo-live-links"
                             target="_blank"
                             rel="noreferrer"
-                            href={`${des.c}`}> Client Repo</a> |
-                          <a
-                            className="repo-live-links"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={`${des.s}`}> Server Repo</a>
+                            href={`${des.c}`}>Client Repo </a>
+                          {des.s && (
+                            <>| {" "}
+                              <a
+                                className="repo-live-links"
+                                target="_blank"
+                                rel="noreferrer"
+                                href={`${des.s}`}
+                              >
+                                Server Repo
+                              </a>
+                            </>
+                          )}
                         </div>
                       </p>
                     ))}

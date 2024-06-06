@@ -102,9 +102,9 @@ const PortfolioBlock = () => {
                     />
                   </div>
                   <div className='title_holder'>
-                    <p>PERN Stack</p>
+                    <p>Javascript, Next, React, Tailwind</p>
                     <h3>
-                      <a href='#'>Neighbr</a>
+                      <a href='#'>NearNet</a>
                     </h3>
                   </div>
                 </div>
