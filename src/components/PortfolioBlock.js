@@ -95,10 +95,10 @@ const PortfolioBlock = () => {
                   data-index={2}
                 >
                   <div className='img_holder'>
-                    <img src='img/portfolio/neighbr-home.png' alt='image' />
+                    <img src='img/portfolio/nearnet.png' alt='image' />
                     <div
                       className='abs_img'
-                      data-bg-img='img/portfolio/neighbr-home.png'
+                      data-bg-img='img/portfolio/nearnet.png'
                     />
                   </div>
                   <div className='title_holder'>
