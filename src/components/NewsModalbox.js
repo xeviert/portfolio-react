@@ -23,7 +23,7 @@ const NewsModalbox = ({ close, value }) => {
       desc: [
         {
           p: "NearNet is a modern web application designed to facilitate neighborhood interactions and foster a sense of community among residents. Inspired by platforms like Nextdoor, NearNet allows users to connect, share, and engage with their local community through various features such as posting favors, profile management, and real-time updates.",
-          l: "https://nearnet.vercel.app/",
+          l: "https://nearnet.vercel.app/about",
           c: "https://github.com/xeviert/nearnet",
           s: ""
         }
