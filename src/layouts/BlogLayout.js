@@ -12,7 +12,9 @@ const Layout = ({ children }) => {
       </Head>
       <div className="resumo_fn_wrapper">
         <div className="resumo_fn_content">
-          <div className="resumo_fn_page">{children}</div>
+          <div className="resumo_fn_page">
+            {children}
+          </div>
           <Footer />
         </div>
       </div>

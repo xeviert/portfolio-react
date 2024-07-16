@@ -1,5 +1,5 @@
-import BlogLayout from '../src/layouts/BlogLayout'
-import BlogList from "../src/components/BlogList";
+import BlogLayout from '../../src/layouts/BlogLayout'
+import BlogList from "../../src/components/blog/BlogList";
 
 const Blog = () => {
   return (

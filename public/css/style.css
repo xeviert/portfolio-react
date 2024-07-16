@@ -1627,11 +1627,11 @@ a:focus {
 /*------------------------------------------------------------------*/
 /*	13) Services List
 /*------------------------------------------------------------------*/
-#services {
+#blog {
 	padding: 150px 0 27px;
 }
 
-#services .resumo_fn_main_title {
+#blog .resumo_fn_main_title {
 	margin-bottom: 88px;
 }
 
@@ -2713,7 +2713,7 @@ a:focus {
 		padding-top: 100px;
 	}
 
-	#services {
+	#blog {
 		padding-top: 100px;
 	}
 
