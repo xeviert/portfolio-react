@@ -13,7 +13,7 @@ const styles = {
     paddingTop: '40px',
     paddingLeft: '30px',
     margin: '30px',
-    color: '#fff', // Adjust color if necessary
+    color: '#fff',
   },
   blogDate: {
     margin: '0',

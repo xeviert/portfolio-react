@@ -3,6 +3,20 @@ import { useState } from 'react';
 const About = () => {
   const [toggleList, setToggleList] = useState('tab1');
   const activeList = (value) => (value === toggleList ? 'active' : '');
+  const skills = [
+    'Next',
+    'Supabase',
+    'Javascript',
+    'React',
+    'Redux',
+    'Express',
+    'PostgreSQL',
+    'Cypress',
+    'Heroku & Vercel',
+    'Git',
+    'Github',
+  ]
+
   return (
     <section id='about'>
       <div className='container'>
@@ -143,8 +157,42 @@ const About = () => {
                     <li>
                       <div className='item'>
                         <div className='item_top'>
+                          <h5>Sonicbids/Advance Music Technologies</h5>
+                          <span>( 09/2024 — Present )</span>
+                        </div>
+                        <h3>
+                          Lead Software Engineer
+                        </h3>
+                        <p>
+                          <ul className='experience-list'>
+                            <li>
+                              Spearheaded the end-to-end development of a full-stack web application using React, Redux, TypeScript, Node.js,
+                              Express, and PostgreSQL, achieving MVP status single-handedly.
+                            </li>
+                            <li>
+                              Designed anddeveloped RESTful APIs for seamless client-server communication, reducing API response times by 25%.
+                            </li>
+                            <li>
+                              Architected robust state management solutions with Redux and Redux Toolkit, including custom middleware and
+                              asynchronous thunks, enhancing application performance by 30%.
+                            </li>
+                            <li>
+                              Optimized frontend performance through code-splitting, lazy loading, and memoization, resulting in a smoother user
+                              interface.
+                            </li>
+                            <li>
+                              Implemented user authentication and authorization mechanisms, including secure login, registration, and role-based
+                              access control, ensuring data privacy.
+                            </li>
+                          </ul>{' '}
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='item'>
+                        <div className='item_top'>
                           <h5>Artificial Compute</h5>
-                          <span>( 06/2023 — Present )</span>
+                          <span>( 06/2023 — 06/2024 )</span>
                         </div>
                         <h3>
                           Consulting Software Engineer
@@ -267,20 +315,6 @@ const About = () => {
                 {/* Boxed List */}
                 <div className='resumo_fn_boxed_list'>
                   <ul>
-                    {/* <li>
-                      <div className="item">
-                        <div className="item_top">
-                          <h5>Frenify University</h5>
-                          <span>( 2014 — 2017 )</span>
-                        </div>
-                        <h3>Computer Science</h3>
-                        <p>
-                          Adipisicing Lorem ipsum dolor sit amet, consectetur
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.{" "}
-                        </p>
-                      </div>
-                    </li> */}
                     <li>
                       <div className='item'>
                         <div className='item_top'>
@@ -310,146 +344,21 @@ const About = () => {
               <div id='tab3' className={`tab_item ${activeList('tab3')}`}>
                 {/* Progress Bar */}
                 <div className='resumo_fn_progress_bar'>
-                  <div className='progress_item open' data-value={92}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Javascript</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 92% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
+                  {skills.map(skill => (
+                    <div className='progress_item open' data-value={100}>
+                      <div className='item_in'>
+                        <h3 className='progress_title'>{skill}</h3>
+                        <span
+                          className='progress_percent'
+                          style={{ right: '0%' }}
+                        >
+                        </span>
+                        <div className='bg_wrap'>
+                          <div className='progress_bg' style={{ width: '0%' }} />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className='progress_item open' data-value={80}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>React</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 80% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={95}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Redux</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 95% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={80}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Node &amp; Express</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 80% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>PostgreSQL</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Cypress</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Heroku &amp; Vercel</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>jQuery</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Git</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='progress_item open' data-value={85}>
-                    <div className='item_in'>
-                      <h3 className='progress_title'>Github</h3>
-                      <span
-                        className='progress_percent'
-                        style={{ right: '0%' }}
-                      >
-                        {/* 85% */}
-                      </span>
-                      <div className='bg_wrap'>
-                        <div className='progress_bg' style={{ width: '0%' }} />
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
 
                 {/* /Progress Bar */}
