@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import GitHubCalendar from 'react-github-calendar'
 
 const About = () => {
   const [toggleList, setToggleList] = useState('tab1');
@@ -16,6 +17,23 @@ const About = () => {
     'Git',
     'Github',
   ];
+
+  const customTheme = {
+    dark: [
+      "#1a1a1a",
+      "#0e4429",
+      "#006d32",
+      "#26a641",
+      "#39d353",
+    ],
+    light: [
+      "#1a1a1a",
+      "#0e4429",
+      "#006d32",
+      "#26a641",
+      "#39d353",
+    ],
+  };
 
   const renderSkill = (skill, index) => (
     <div key={index} className="progress_item open" data-value={100}>
@@ -133,6 +151,11 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          <div>
+            <GitHubCalendar username="xeviert" theme={customTheme} />
+          </div>
+
           <div className='resumo_fn_tabs'>
             <div className='tab_header'>
               <ul>
@@ -167,7 +190,7 @@ const About = () => {
                         <h3>
                           Lead Software Engineer
                         </h3>
-                        <p>
+                        <div>
                           <ul className='experience-list'>
                             <li>
                               Spearheaded the end-to-end development of a full-stack web application using React, Redux, TypeScript, Node.js,
@@ -189,7 +212,7 @@ const About = () => {
                               access control, ensuring data privacy.
                             </li>
                           </ul>{' '}
-                        </p>
+                        </div>
                       </div>
                     </li>
                     <li>
@@ -201,7 +224,7 @@ const About = () => {
                         <h3>
                           Consulting Software Engineer
                         </h3>
-                        <p>
+                        <div>
                           <ul className='experience-list'>
                             <li>
                               Led the development of dynamic web applications using React and Redux as the sole front-end engineer, resulting in highly
@@ -215,7 +238,7 @@ const About = () => {
                               experience.
                             </li>
                           </ul>{' '}
-                        </p>
+                        </div>
                       </div>
                     </li>
                     <li>
@@ -227,7 +250,7 @@ const About = () => {
                         <h3>
                           Junior Software Engineer/Quality Assurance Engineer
                         </h3>
-                        <p>
+                        <div>
                           <ul className='experience-list'>
                             <li>
                               Contributed significantly in a cross-functional team, helping to
@@ -252,7 +275,7 @@ const About = () => {
                               and testing methods, to support future project reference and continuity.
                             </li>
                           </ul>{' '}
-                        </p>
+                        </div>
                       </div>
                     </li>
                     <li>
@@ -262,7 +285,7 @@ const About = () => {
                           <span>( 3/2021 — 12/2021 )</span>
                         </div>
                         <h3>Web Developer</h3>
-                        <p>
+                        <div>
                           <ul className='experience-list'>
                             <li>
                               Revamped mission-critical web applications using Javascript,
@@ -283,7 +306,7 @@ const About = () => {
                               Jest and Puppeteer.
                             </li>
                           </ul>{' '}
-                        </p>
+                        </div>
                       </div>
                     </li>
                     <li>
@@ -293,7 +316,7 @@ const About = () => {
                           <span>( 3/2015 — 10/2019 )</span>
                         </div>
                         <h3>Financial Advisor</h3>
-                        <p>
+                        <div>
                           <ul className='experience-list'>
                             <li>
                               Serviced accounts for more than 100 clients with
@@ -306,7 +329,7 @@ const About = () => {
                               client needs and asset availability.
                             </li>
                           </ul>{' '}
-                        </p>
+                        </div>
                       </div>
                     </li>
                   </ul>
