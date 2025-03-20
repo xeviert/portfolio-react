@@ -152,7 +152,7 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div style={{ marginBottom: 64 }}>
             <GitHubCalendar username="xeviert" theme={customTheme} />
           </div>
 
