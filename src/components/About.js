@@ -26,14 +26,13 @@ const About = () => {
             <h3 className='subtitle'>About Me</h3>
             <h3 className='title'>Biography</h3>
             <p className='desc'>
-              {`As a versatile Software Developer, I bring experience in both 
-              front-end and back-end development, primarily using JavaScript and React along 
-              with its various frameworks like Redux, Express, and Typescript. My expertise 
-              extends to working with PostgreSQL and Knex as a JS query builder, 
-              demonstrating my ability to handle diverse technologies. Throughout my career, 
-              I’ve had the opportunity to explore and adapt to different technologies across 
-              various roles, continually expanding my skill set. I’m always eager to take on 
-              new challenges and contribute to innovative solutions.`}
+              {`I’m a full-stack software engineer who started with the PERN stack (PostgreSQL, Express, React, Node.js) and have since expanded into 
+              building modern web applications with Next.js, cloud platforms like AWS and Vercel, and tools like Supabase. I love creating seamless, 
+              scalable solutions for startups and tackling challenges across the entire stack.`}
+              <br />
+              <br />
+              {`When I’m not coding, you’ll find me exploring new tech, tinkering with side projects, hitting the gym, or brewing beer. 
+              I'm always eager to collaborate on ideas and excited to pick up new skills.`}
             </p>
           </div>
           {/* /Main Title */}

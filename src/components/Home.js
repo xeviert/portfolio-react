@@ -10,8 +10,10 @@ const Home = () => {
             <h3 className="subtitle">Introduction</h3>
             <h3 className="title">Software Engineer</h3>
             <p className="desc">
-              Software engineer proficient in JavaScript, React, Node, Express, and PostgreSQL. I have over 3 years of
-              experience as a developer and continually expand my technical skill set.
+              Full-stack software engineer with expertise in JavaScript, React, Next.js, Node.js, and modern web development.
+              Experienced in building and deploying scalable applications using cloud platforms like AWS, Vercel, and Supabase.
+              Proficient in database design with PostgreSQL and passionate about creating seamless user experiences.
+              Continuously expanding my skill set to deliver innovative solutions for startups and beyond.
             </p>
             <a
               className='fn__link'

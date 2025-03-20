@@ -29,11 +29,11 @@ const Nav = ({ close, trigger }) => {
                   About
                 </a>
               </li>
-              <li style={{ transitionDelay: !trigger ? "0ms" : "1100ms" }}>
+              {/* <li style={{ transitionDelay: !trigger ? "0ms" : "1100ms" }}>
                 <a onClick={() => close()} href="#portfolio">
                   Portfolio
                 </a>
-              </li>
+              </li> */}
               {/* <li style={{ transitionDelay: !trigger ? "0ms" : "1300ms" }}>
                 <a onClick={() => close()} href="#services">
                   Services
@@ -194,21 +194,8 @@ const Nav = ({ close, trigger }) => {
                 </li>
               </ul>
             </div> */}
-            {/* <div className="copyright">
-              {" "}
-              Developed by &nbsp;
-              <a
-                href="https://themeforest.net/user/trendycoder"
-                target="_blank"
-                rel="noreferrer"
-              >
-                TrendyCoder
-              </a>
-            </div> */}
           </div>
         </div>
-
-        {/* /Navigation Content */}
       </div>
     </Fragment>
   );
