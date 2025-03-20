@@ -5,7 +5,6 @@ const Home = () => {
     <section id="home">
       <div className="container">
         <div className="roww">
-          {/* Main Title */}
           <div className="resumo_fn_main_title">
             <h3 className="subtitle">Introduction</h3>
             <h3 className="title">Software Engineer</h3>

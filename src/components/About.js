@@ -15,28 +15,41 @@ const About = () => {
     'Heroku & Vercel',
     'Git',
     'Github',
-  ]
+  ];
+
+  const renderSkill = (skill, index) => (
+    <div key={index} className="progress_item open" data-value={100}>
+      <div className="item_in">
+        <h3 className="progress_title">{skill}</h3>
+        <span
+          className="progress_percent"
+          style={{ right: "0%" }}
+        ></span>
+        <div className="bg_wrap">
+          <div className="progress_bg" style={{ width: "0%" }}></div>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <section id='about'>
       <div className='container'>
         <div className='roww'>
-          {/* Main Title */}
           <div className='resumo_fn_main_title'>
             <h3 className='subtitle'>About Me</h3>
             <h3 className='title'>Biography</h3>
             <p className='desc'>
-              {`I’m a full-stack software engineer who started with the PERN stack (PostgreSQL, Express, React, Node.js) and have since expanded into 
-              building modern web applications with Next.js, cloud platforms like AWS and Vercel, and tools like Supabase. I love creating seamless, 
-              scalable solutions for startups and tackling challenges across the entire stack.`}
-              <br />
-              <br />
-              {`When I’m not coding, you’ll find me exploring new tech, tinkering with side projects, hitting the gym, or brewing beer. 
-              I'm always eager to collaborate on ideas and excited to pick up new skills.`}
+              'I’m a full-stack software engineer who started with the PERN stack (PostgreSQL, Express, React, Node.js) and have since expanded into
+              building modern web applications with Next.js, cloud platforms like AWS and Vercel, and tools like Supabase. I love creating seamless,
+              scalable solutions for startups and tackling challenges across the entire stack.'</p>
+            <br />
+            <br />
+            <p className='desc'>
+              'When I’m not coding, you’ll find me exploring new tech, tinkering with side projects, hitting the gym, or brewing beer.
+              I'm always eager to collaborate on ideas and excited to pick up new skills.'
             </p>
           </div>
-          {/* /Main Title */}
-          {/* About Information */}
           <div className='resumo_fn_about_info'>
             <div className='about_left'>
               <table>
@@ -81,7 +94,6 @@ const About = () => {
               </table>
             </div>
             <div className='about_right'>
-              {/* Download CV Button */}
               <div className='resumo_fn_cv_btn'>
                 <a
                   href='img/Xevier-Turrubiartes-Resume.pdf'
@@ -119,13 +131,9 @@ const About = () => {
                   <span>Download CV</span>
                 </a>
               </div>
-              {/* /Download CV Button */}
             </div>
           </div>
-          {/* /About Information */}
-          {/* Tabs Shortcode */}
           <div className='resumo_fn_tabs'>
-            {/* Tab: Header */}
             <div className='tab_header'>
               <ul>
                 <li className={activeList('tab1')}>
@@ -145,10 +153,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            {/* /Tab: Header */}
-            {/* Tab: Content */}
             <div className='tab_content'>
-              {/* #1 tab content */}
               <div id='tab1' className={`tab_item ${activeList('tab1')}`}>
                 {/* Boxed List */}
                 <div className='resumo_fn_boxed_list'>
@@ -308,8 +313,6 @@ const About = () => {
                 </div>
                 {/* /Boxed List */}
               </div>
-              {/* /#1 tab content */}
-              {/* #2 tab content */}
               <div id='tab2' className={`tab_item ${activeList('tab2')}`}>
                 {/* Boxed List */}
                 <div className='resumo_fn_boxed_list'>
@@ -343,21 +346,7 @@ const About = () => {
               <div id='tab3' className={`tab_item ${activeList('tab3')}`}>
                 {/* Progress Bar */}
                 <div className='resumo_fn_progress_bar'>
-                  {skills.map(skill => (
-                    <div className='progress_item open' data-value={100}>
-                      <div className='item_in'>
-                        <h3 className='progress_title'>{skill}</h3>
-                        <span
-                          className='progress_percent'
-                          style={{ right: '0%' }}
-                        >
-                        </span>
-                        <div className='bg_wrap'>
-                          <div className='progress_bg' style={{ width: '0%' }} />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                  {skills.map(renderSkill)}
                 </div>
 
                 {/* /Progress Bar */}
@@ -374,9 +363,7 @@ const About = () => {
               </div>
               {/* /#2 tab content */}
             </div>
-            {/* /Tab: Content */}
           </div>
-          {/* /Tabs Shortcode */}
         </div>
       </div>
     </section>

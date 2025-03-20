@@ -1,53 +1,6 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    email: '',
-    name: '',
-    subject: '',
-    message: '',
-  });
-
-  const [active, setActive] = useState(null);
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const onChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-  const { email, name, subject, message } = form;
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-
-    if (email && name && subject && message) {
-      setSuccess(true);
-      emailjs
-        .sendForm(
-          'service_gqjceqa',
-          'template_wz583e7',
-          e.target,
-          'bOBPvsrEac-7DQaGD'
-        )
-        .then((result) => {
-          console.log(result.text);
-        }, 2000);
-      e.target.reset();
-      setTimeout(() => {
-        setForm({ email: '', name: '', subject: '', message: '' });
-      });
-    } else {
-      setError(true);
-      setSuccess(false);
-      (error) => {
-        console.log(error);
-      };
-      setTimeout(() => {
-        setError(false);
-      }, 2000);
-    }
-  };
-
   return (
     <section id='contact'>
       <div className='container'>
