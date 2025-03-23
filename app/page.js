@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import PortfolioBlock from "./components/PortfolioBlock";
 import Layout from "./layouts/Layout";
 
+import './styles/globals.css';
+
 const Index = () => {
   return (
     <Layout>

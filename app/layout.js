@@ -1,13 +1,10 @@
 import { Inter } from 'next/font/google';
-import './globals.css';
 
-// Define your font (optional)
 const inter = Inter({ subsets: ['latin'] });
 
-// Metadata for the app
 export const metadata = {
-  title: 'Your App Title',
-  description: 'personal portfolio react template',
+  title: 'Xevier T. Personal',
+  description: 'Personal portfolio with Next',
 };
 
 export default function RootLayout({ children }) {
