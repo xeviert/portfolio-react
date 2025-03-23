@@ -7,7 +7,7 @@ export const aTagClick = () => {
     });
   }
 };
-// Data image
+
 export const dataImage = () => {
   let d = document.querySelectorAll('[data-bg-img');
   for (let i = 0; i < d.length; i++) {
@@ -40,7 +40,6 @@ export const customCursor = () => {
         i = 0,
         o = !1;
       (window.onmousemove = function (s) {
-        // console.log(document.querySelector(this));
         o ||
           (t.style.transform =
             'translate(' + s.clientX + 'px, ' + s.clientY + 'px)'),
@@ -51,7 +50,6 @@ export const customCursor = () => {
       }),
         document.body.addEventListener(
           'mouseenter',
-          // "a,.kura_tm_topbar .trigger, .cursor-pointer",
           function () {
             let a = document.querySelectorAll('a'),
               sliders = document.querySelectorAll(
